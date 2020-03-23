@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Профиль</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='/socket.io/socket.io.js'></script>
+</head>
+<body>
+<div class="header">
+    <h1>My Profile</h1>
+    <p>Hello, <span id="name">{{ username }}</span></p>
+</div>
+<div class="topnav">
+    <input type="button" value="Чат" onClick='location.href="http://localhost:7777/chat"'>
+    <a href="#" class="logout-btn">Logout</a>
+</div>
+<div class="row">
+    <div class="side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+            <form class="edit" method="post">
+                <h3>about 1</h3>
+                <p>{{ about1 }}</p>
+                <input type="text" name="about1" placeholder="about1"/>
+                <h3>about 2</h3>
+                <p>{{ about2 }}</p>
+                <input type="text" name="about2" placeholder="about2"/>
+                <h3>about 1</h3>
+                <p>{{ about3 }}</p>
+                <input type="text" name="about3" placeholder="about3"/> <br>
+                <button type="submit">Edit</button>
+<!--              <p class="message">Not registered? <a href="#">Create an account</a></p>-->
+            </form>
+
+    </div>
+    <div class="main">
+        <h2>Online now</h2>
+        <ul>
+            <li>элемент маркированного списка</li>
+            <li>элемент маркированного списка</li>
+            <li>элемент маркированного списка</li>
+            <li>элемент маркированного списка</li>
+            <li>элемент маркированного списка</li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <h2>Footer</h2>
+</div>
+
+<script src="../assets/scripts/profile.js"></script>
+</body>
+</html>
+
