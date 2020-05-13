@@ -9,50 +9,151 @@
     <script src='/socket.io/socket.io.js'></script>
 </head>
 <body>
-<div class="header">
-    <h1>My Profile</h1>
-    <p>Hello, <span id="name">{{ username }}</span></p>
-</div>
-<div class="topnav">
-    <input type="button" value="Чат" onClick='location.href="http://localhost:7777/chat"'>
-    <a href="#" class="logout-btn">Logout</a>
-</div>
-<div class="row">
-    <div class="side">
-        <h2>About Me</h2>
-        <h5>Photo of me:</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-            <form class="edit" method="post">
-                <h3>about 1</h3>
-                <p>{{ about1 }}</p>
-                <input type="text" name="about1" placeholder="about1"/>
-                <h3>about 2</h3>
-                <p>{{ about2 }}</p>
-                <input type="text" name="about2" placeholder="about2"/>
-                <h3>about 1</h3>
-                <p>{{ about3 }}</p>
-                <input type="text" name="about3" placeholder="about3"/> <br>
-                <button type="submit">Edit</button>
-<!--              <p class="message">Not registered? <a href="#">Create an account</a></p>-->
-            </form>
+<div class="wrapper">
+    <div class="avatar">
+        <img src="../assets/avatar.jpg" alt="" />
+
+        <div class="head__block">
+            <div class="head__1">
+                <div class="head__1__1">
+                    <div class="nickname__block" id="text">
+                        BRODJA_228
+                    </div>
+                    <div class="button__back__block">
+                        <button class="button__back" id="text">
+                            Повернутися у чат
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="head__2">
+                <button class="button__like"> <span class="button__like__2">2</span> </button>
+            </div>
+        </div>
+    </div>
+    <div class="content__box">
+        <img src="img/background.png" alt="" />
+        <div class="content">
+            <div class="box__1">
+                <div class="nickname2">
+                    BRODJA_228
+                </div>
+                <div class="account__created">
+                    <div class="account__created__text">
+                        Акаунт створено :
+                    </div>
+                    <div class="account__created__date">
+                        11.05.2020
+                    </div>
+                </div>
+            </div>
+            <!-- <hr width="280px" color="white"> -->
+            <div class="box__2">
+                <div class="button__edit__1">
+                    <a href="#">Редагувати</a>
+                </div>
+                <div class="about__me">
+                    <div class="about__me__title">
+                        Про мене
+                    </div>
+                    <div class="about__me__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+                <div class="about__6__blocks">
+                    <div class="about__6__blocks__4">
+
+                        <div class="about__info_age">
+                            <div class="about__info__title__age">
+                                Вік
+                            </div>
+                            <div class="about__info__text__age">
+                                69
+                            </div>
+                        </div>
+
+                        <div class="about__info">
+                            <div class="about__info__title">
+                                Школа
+                            </div>
+                            <div class="about__info__text">
+                                Вища школа  магії Хогвартс
+                            </div>
+                        </div>
+
+                        <div class="about__info">
+                            <div class="about__info__title">
+                                Робота
+                            </div>
+                            <div class="about__info__text">
+                                Збиваю охуйки
+                            </div>
+                        </div>
+
+                        <div class="about__info">
+                            <div class="about__info__title">
+                                Хобі
+                            </div>
+                            <div class="about__info__text">
+                                Працюю 24/7
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="about__6__blocks__2">
+                        <div class="about__info">
+                            <div class="about__info__title">
+                                Університет
+                            </div>
+                            <div class="about__info__text">
+                                Політєх Шарага
+                            </div>
+                        </div>
+
+                        <div class="about__info">
+                            <div class="about__info__title">
+                                Вподобання
+                            </div>
+                            <div class="about__info__text">
+                                Збиваю охуйки
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <hr width="280px" color="white" > -->
+            <div class="box__3">
+                <div class="menu__foto">
+                    <div class="foto__title">
+                        Фотографії
+                    </div>
+                    <div class="about__5__foto">
+                        <img class="one__foto" src="../assets/foto.jpg" alt="">
+                        <img class="one__foto" src="../assets/foto.jpg" alt="">
+                        <img class="one__foto" src="../assets/foto.jpg" alt="">
+                        <img class="one__foto" src="../assets/foto.jpg" alt="">
+                        <img class="one__foto__last" src="../assets/foto.jpg" alt="">
+                    </div>
+                </div>
+                <div class="doble__buttons">
+                    <div class="look__button">
+                        <a href="#">Переглянути альбом</a>
+                    </div>
+                    <div class="edit__button_2">
+                        <a href="#">Редагувати</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
-    <div class="main">
-        <h2>Online now</h2>
-        <ul>
-            <li>элемент маркированного списка</li>
-            <li>элемент маркированного списка</li>
-            <li>элемент маркированного списка</li>
-            <li>элемент маркированного списка</li>
-            <li>элемент маркированного списка</li>
-        </ul>
-    </div>
-</div>
-<div class="footer">
-    <h2>Footer</h2>
-</div>
-
-<script src="../assets/scripts/profile.js"></script>
+</div><script src="../assets/scripts/profile.js"></script>
 </body>
 </html>
 

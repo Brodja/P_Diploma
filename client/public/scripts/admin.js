@@ -1,14 +1,28 @@
+main_btn.onclick = function(){
+    main_form.style.display = "block";
+    login_form.style.display = "none";
+    about_form.style.display = "none";
+    main_btn.style.borderBottomColor = '#ffc222';
+    login_btn.style.borderBottomColor = 'transparent';
+    about_btn.style.borderBottomColor = 'transparent';
+}
+login_btn.onclick = function(){
+    main_form.style.display = "none";
+    login_form.style.display = "block";
+    about_form.style.display = "none";
+    main_btn.style.borderBottomColor = 'transparent';
+    login_btn.style.borderBottomColor = '#ffc222';
+    about_btn.style.borderBottomColor = 'transparent';
+}
+about_btn.onclick = function(){
+    main_form.style.display = "none";
+    login_form.style.display = "none";
+    about_form.style.display = "block";
+    main_btn.style.borderBottomColor = 'transparent';
+    login_btn.style.borderBottomColor = 'transparent';
+    about_btn.style.borderBottomColor = '#ffc222';
+}
 
-$("form .message a").on("click", e => {
-    e.preventDefault();
-    if ($(".login:visible").length > 0) {
-        $(".login").css("display", "none");
-        $(".register").css("display", "block");
-    } else {
-        $(".register").css("display", "none");
-        $(".login").css("display", "block");
-    }
-});
 
 function response(data) {
     let resp = data.responseText;
@@ -32,11 +46,10 @@ $("form").on("submit", e => {
         type: "POST",
         data: {
             username: $(selector + " [name=username]").val(),
-            about1: $(selector + " [name=about1]").val(),
             password: $(selector + " [name=password]").val()
         },
         beforeSend: () => {
-            $(selector + " button").prop("disabled", true);
+            $(selector + " input").prop("disabled", true);
         },
         success: res => {
             alert(response(res));

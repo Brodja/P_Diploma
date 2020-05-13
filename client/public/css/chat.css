@@ -1,107 +1,228 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
-*, *:before, *:after {
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+li {
+    list-style-type: none;
+}
 body {
-    background: #C5DDEB;
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background-color: #2e2e2e;
+}
+.wrapper {
+    padding: 62px 53px 61px 39px;
 }
 
-.container {
-    margin: 2% auto;
-    width: 760px;
-    background: #444753;
-}
-
-.users-list {
-    width: 270px;
+.block__1 {
+    /* padding-right: 30px; */
+    width: 29%;
     float: left;
 }
-.users-list .search {
-    padding: 20px;
-}
-.users-list input {
-    border-radius: 3px;
-    border: none;
-    padding: 14px;
-    color: white;
-    background: #6A6C75;
-    width: 90%;
-    font-size: 14px;
-}
-.users-list .fa-search {
+.block__1__content {
+    /* Style for "Rectangle" */
+    width: 100%;
+    min-height: 92vh;
+    border-radius: 32px;
+    background-color: #1f1f1f;
     position: relative;
-    left: -25px;
 }
-.users-list ul {
-    padding: 20px;
-    max-height: 770px;
+.list {
+    width: 100%;
+    height: 100%;
+    padding: 10% 5% 9% 5%;
 }
-.users-list ul li {
-    padding-bottom: 20px;
+.list__person {
+    width: 90%;
+    overflow-y: scroll;
+    overflow-y: auto;
+    max-height: 82vh;
 }
-.users-list img {
+.person {
+    /* Style for "Rectangle" */
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #313131;
+    /* margin-bottom: 20px; */
+    padding: 5px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+.person__avatar {
+    /* Style for "Ellipse 9" */
+    width: 74px;
+    height: 74px;
+    width: 17%;
+    background: url(../images/foto.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80px;
+    border-radius: 50%;
     float: left;
+    margin-right: 10px;
+
 }
-.users-list .about {
-    float: left;
-    margin-top: 8px;
+
+.person__text{
+    width: 70%;
+
+    /* float: right; */
 }
-.users-list .about {
-    padding-left: 8px;
-}
-.users-list .status {
-    color: #92959E;
-}
-.chat, .room {
-    background: #F2F5F8;
-}
-.chat .chat-header, .room .room-header {
-    padding: 20px;
-    border-bottom: 2px solid white;
-}
-.chat .chat-header img, .room .room-header img {
-    float: left;
-}
-.chat .chat-header .chat-about, .room .room-header .room-about {
-    float: left;
-    padding-left: 10px;
-    margin-top: 16px;
-    font-size: 18px;
-}
-.chat .chat-header .chat-about, .room .room-header .room-about #name {
-    font-weight: bold;
-}
-.chat .chat-header .chat-room, .room .room-header .room-title {
-    font-weight: bold;
+.person__name {
+    /* Style for "Настя" */
+    /* width: 43px;
+    height: 23px; */
+    color: #ffffff;
+    font-family: "Segoe UI";
     font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
 }
-.chat .chat-header .chat-num-users, .room .room-header .room-num-rooms {
-    color: #92959E;
+.person__info {
+    /* Style for "Давай сьод" */
+    /* width: 296px;
+    height: 23px; */
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
 }
-.fa-users, .fa-th-list {
-    float: right;
-    color: #D8DADF;
+.block__1__title__contanier {
+    /* Style for "Rectangle" */
+    position: absolute;
+    top: 3.33%;
+    left: 7.7%;
+    width: 16.5%;
+    height: 47px;
+    border-radius: 30px;
+    background-color: #474747;
+    text-align: center;
+    padding-top: 20px;
+}
+.block__1__title {
+    /* Style for "Ваші діало" */
+    width: 121px;
+    height: 28px;
+    color: #ffffff;
+    font-family: "Segoe UI";
     font-size: 20px;
-    margin-top: 12px;
+    font-weight: 600;
+    line-height: 23px;
 }
-.chat .chat-history, .room .room-list {
+
+.block__2 {
+    width: 69%;
+    float: right;
+}
+.block__2__content {
+    /* Style for "Rectangle" */
+    width: 100%;
+    min-height: 92vh;
+    border-radius: 32px;
+    background-color: #1f1f1f;
+    position: relative;
+}
+
+.chat {
+    width: 89.8%;
+    height: 83.3%;
+    padding: 69px;
+}
+.chat-history {
+    width: 93%;
+    height: 40%;
+    /* border: 1px solid white; */
+}
+.block__chat {
+    position: absolute;
+    top: 81%;
+    width: 88.5%;
+}
+
+.input__chat {
+    width: 94.5%;
+    height: 56px;
+    border-radius: 30px;
+    border: 1px solid #797979;
+    background-color: rgb(0, 0, 0, 0);
+    color: #aaaaaa;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-weight: 400;
+    resize: none;
+    padding: 5px 30px 5px 30px;
+}
+.block__send__button {
+    float: right;
+    padding-top: 10px;
+}
+.send__button {
+    /* Style for "Rectangle" */
+    width: 183px;
+    height: 56px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    background-color: rgb(0, 0, 0, 0);
+}
+.send__button__text {
+    /* Style for "Надіслати" */
+    width: 90px;
+    height: 28px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.block__2__title__contanier {
+    /* Style for "Rectangle" */
+    width: 16.5%;
+    height: 47px;
+    border-radius: 30px;
+    background-color: #474747;
+    position: absolute;
+    top: 34px;
+    left: 58.1%;
+    text-align: center;
+    padding-top: 20px;
+}
+.block__2__title {
+    /* Style for "Загальний" */
+    width: 134px;
+    height: 28px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+/* Chat */
+.chat .chat-history,
+.room .room-list {
     padding: 10px 30px 20px;
     border-bottom: 2px solid white;
-    overflow-y: scroll;
-    max-height: 580px;
+    overflow-y: auto;
+    max-height: 530px;
 }
 .chat .chat-history .message-data {
     margin-bottom: 15px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
 }
 .chat .chat-history .message-data-time {
     color: #a8aab1;
     padding-left: 6px;
     font-size: 80%;
+    /* Style for "11: 05" */
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
 }
 .chat .chat-history .message {
     color: white;
@@ -111,6 +232,13 @@ body {
     margin-bottom: 30px;
     /*width: 90%;*/
     position: relative;
+    /* Style for "Вихажу на" */
+
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
 }
 .chat .chat-history .message:after {
     bottom: 100%;
@@ -121,123 +249,13 @@ body {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: #86BB71;
+    border-bottom-color: #474747;
     border-width: 10px;
     margin-left: -10px;
 }
 .chat .chat-history .my-message {
-    background: #86BB71;
-}
-.chat .chat-message, .room .room-create {
-    padding: 20px;
-}
-.chat .chat-message textarea, .room .room-create input {
-    width: 100%;
-    border: none;
-    padding: 10px 20px;
-    font: 14px/22px "Roboto", Arial, sans-serif;
-    margin-bottom: 10px;
-    resize: none;
-}
-.online, .offline, .me {
-    margin-right: 3px;
-    font-size: 10px;
-}
-
-.online {
-    color: #86BB71;
-}
-
-.offline {
-    color: #E38968;
-}
-
-.me {
-    color: #94C2ED;
-}
-
-.align-left {
-    text-align: left;
-}
-
-.align-right {
-    text-align: right;
-}
-
-.float-right {
-    float: right;
-}
-
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-
-
-/*  Login Page */
-.login-page {
-    width: 400px;
-    padding: 8% 0 0;
-    margin: auto;
-}
-.form {
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 400px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form input {
-    font-family: "Roboto", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-.form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #86BB71;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-}
-.form button:hover:enabled,.form button:active,.form button:focus {
-    background: #89c771;
-}
-.form .message, .room-create .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
-    font-size: 12px;
-}
-.form .message a {
-    color: #86BB71;
-    text-decoration: none;
-}
-.form .register-form {
-    display: none;
-}
-
-/* ****** Edits ****** */
-ul {
-    list-style: none;
+    border-radius: 30px;
+    background-color: #474747;
 }
 .chat-history ul {
     margin: 0;
@@ -247,116 +265,6 @@ ul {
     font: inherit;
     vertical-align: baseline;
 }
-.room .room-list .room-item {
-    color: white;
-    padding: 12px 14px;
-    line-height: 26px;
-    font-size: 20px;
-    border-radius: 7px;
-    margin-bottom: 10px;
-    width: 90%;
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-}
-.room .room-list .room-item {
-    background: #86BB71;
-}
-.room .room-list a {
-    text-decoration: none;
-}
-.users-list .name {
-    color: white;
-}
-.users-list ul {
-    overflow-y: scroll;
-}
-.loginBtn {
-    width: 80%;
-}
-.form {
-    background-color: #F2F5F8;
-}
-.form input {
-    background-color: white;
-}
-.form-line {
-    position: absolute;
-    left: 0px;
-    width: 360px;
-    margin-top: 2px;
-    border-bottom: 2px solid white;
-}
-.social-buttons div span {
-    font-weight: bold;
-}
-.chat-message button, .controls a {
-    font-family: "Roboto", sans-serif;
-    float: right;
-    text-transform: uppercase;
-    outline: 0;
-    background: #86BB71;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-}
-button:hover:enabled, button:active, button:focus {
-    background: #89c771;
-}
-a.rooms-btn:hover:enabled, a.rooms-btn:active, a.rooms-btn:focus {
-    background: #89c771;
-}
-a.logout-btn{
-    background-color: rgb(226, 98, 92);
-}
-a.logout-btn:hover:enabled, a.logout-btn:active, a.logout-btn:focus {
-    background-color: rgb(245, 106, 99);
-}
-.controls {
-    float: right;
-    margin: 0;
-    text-align: center;
-}
-.users-list li img, .chat-header img {
-    width: 60px;
-    height: 60px;
-    border: 3px solid #676c75;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-}
-.controls a {
-    text-decoration: none;
-}
-.message.error {
-    color: red;
-}
-.message.success {
-    color: #86BB71;
-}
-.container {
-    overflow: hidden;
-}
-.chat, .users-list{
-    padding-bottom: 500em;
-    margin-bottom: -500em;
-}
-.not-found-error {
-    padding: 5%;
-    background-color: white;
-}
 .chat .chat-history .my-message {
     text-align: initial;
 }
-.error {
-    text-align: center;
-}
-button:disabled {
-    background: gray;
-}
-
-

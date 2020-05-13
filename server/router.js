@@ -51,6 +51,7 @@ module.exports = app => {
                 });
                 logName = user._id;
                 res.status(200).send({message: "User login success"});
+
             } else res.status(400).send({message: "User already exist or password not correct"});
 
         } catch (e) {
@@ -94,7 +95,7 @@ module.exports = app => {
                 about3:  req.body.about3
             });
 
-        res.status(200).send({message: "Edit"});
+        res.status(200).send({message: "Данные изменены и после перезахода будут обновлены"});
 
 
 

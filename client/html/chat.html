@@ -10,28 +10,251 @@
 </head>
 <body>
 
-<form>
-    <input type="button" value="Профиль" onClick='location.href="http://localhost:7777/profile"'>
-</form>
-<div class="container clearfix">
-    <div class="chat">
-        <div class="chat-header clearfix">
-            <div class="chat-about">
-                <div class="chat-num-users">Hello, <span id="name">{{ username }}</span></div>
-            </div>
-            <div class="controls">
-                <a href="#" class="logout-btn">Logout</a>
+<!--<form>-->
+<!--    <input type="button" value="Профиль" onClick='location.href="http://localhost:7777/profile"'>-->
+<!--</form>-->
+<div class="wrapper">
+    <div class="block__1">
+        <div class="block__1__content">
+            <div class="list">
+                <div class="list__person">
+                    <ul>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person">
+                                <div class="person__avatar">
+                                </div>
+                                <div class="person__text">
+                                    <div class="person__name">Настя</div>
+                                    <div class="person__info">
+                                        Давай сьодня под елджея поіграєм?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="chat-history">
-            <ul>
-            </ul>
+        <div class="block__1__title__contanier">
+            <span class="block__1__title"> Ваші діалоги</span>
         </div>
+    </div>
 
-        <div class="chat-message clearfix">
-            <textarea name="message" placeholder ="Type your message" rows="3"></textarea>
-            <button type="submit">Send</button>
+    <div class="block__2">
+        <div class="block__2__content">
+            <div class="chat">
+                <div class="chat-history">
+                    <ul>
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name">${message.username}</span>
+                                <span class="message-data-time">${message.date}</span>
+                            </div>
+                            <div class="message my-message" dir="auto">
+                                ${message.content}
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name">${message.username}</span>
+                                <span class="message-data-time">${message.date}</span>
+                            </div>
+                            <div class="message my-message" dir="auto">
+                                ${message.content}
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name">${message.username}</span>
+                                <span class="message-data-time">${message.date}</span>
+                            </div>
+                            <div class="message my-message" dir="auto">
+                                ${message.content}
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name">${message.username}</span>
+                                <span class="message-data-time">${message.date}</span>
+                            </div>
+                            <div class="message my-message" dir="auto">
+                                ${message.content}
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name">${message.username}</span>
+                                <span class="message-data-time">${message.date}</span>
+                            </div>
+                            <div class="message my-message" dir="auto">
+                                ${message.content}
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name">${message.username}</span>
+                                <span class="message-data-time">${message.date}</span>
+                            </div>
+                            <div class="message my-message" dir="auto">
+                                ${message.content}
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name">${message.username}</span>
+                                <span class="message-data-time">${message.date}</span>
+                            </div>
+                            <div class="message my-message" dir="auto">
+                                ${message.content}
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name">${message.username}</span>
+                                <span class="message-data-time">${message.date}</span>
+                            </div>
+                            <div class="message my-message" dir="auto">
+                                ${message.content}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="block__chat">
+                    <div class="chat-message clearfix">
+                        <div class="block__input">
+                  <textarea
+                          class="input__chat"
+                          name="message"
+                          placeholder="Type your message"
+                  ></textarea>
+                        </div>
+                        <div class="block__send__button">
+                            <button type="submit" class="send__button">
+                                <span class="send__button__text">Send</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block__2__title__contanier">
+            <span class="block__1__title"> Загальний чат</span>
         </div>
     </div>
 </div>

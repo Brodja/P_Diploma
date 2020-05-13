@@ -4,27 +4,243 @@
     <title>Админ-панель</title>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../assets/css/admin.css">
     <script src='/socket.io/socket.io.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style3.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate-custom.css" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 
 <body>
-<div class="form">
-    <div style="margin-top: 18px;">
-        <form class="register" method="post" style="display: none;">
-            <input type="text" name="username" placeholder="username"/>
-            <input type="text" name="about1" placeholder="about1"/>
-            <input type="password" name="password" placeholder="password"/>
-            <button type="submit">create</button>
-            <p class="message">Already registered? <a href="#">Sign In</a></p>
-        </form>
-        <form class="login" method="post">
-            <input type="text" name="username" placeholder="username"/>
-            <input type="password" name="password" placeholder="password"/>
-            <button type="submit">login</button>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
-        </form>
+<header class="header">
+    <div class="header__top">
+        <div class="contanier">
+            <div class="header_contacts">
+                <a class="header__phone" href="tel:380669786960">+380669786960</a>
+                <a class="header__email" href="#">body1906@gmail.com</a>
+                <a class="header__btn" href="#">Правила користування</a>
+            </div>
+        </div>
     </div>
+    <div class="header__content">
+        <div class="contanier">
+            <div class="header__content-iner">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="../assets/logo.png" width="176" height="70" alt="" />
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#" id="main_btn">Головна</a></li>
+                        <li><a href="#" id="login_btn">Вхід</a></li>
+                        <li><a href="#" id="about_btn">Про нас</a></li>
+                        <li><a href="http://localhost:7777/chat#" id="chat_btn">Чат</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="wrapper">
+    <div class="content">
+        <div class="warning">
+            <div class="contanier">
+                <div class="warning__content-iner">
+                    <div class="warning__logo">
+                        <a href="#">
+                            <img src="../assets/warninglogo.jpg" width="57" height="30" alt="" />
+                        </a>
+                    </div>
+                    <div class="warning__text">
+                        <p>Доступ до чату мають лише авторизовані користувачі!!!</p>
+                    </div>
+                    <div class="warning__logo2">
+                        <a href="#">
+                            <img src="../assets/warninglogo.jpg" width="57" height="30" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin__form" id="login_form">
+            <div class="container">
+                <section>
+                    <div id="container_demo">
+                        <a class="hiddenanchor" id="toregister"></a>
+                        <a class="hiddenanchor" id="tologin"></a>
+                        <div id="wrapper">
+
+                            <div id="login" class="animate form">
+                                <form class="login" method="post" action="mysuperscript.php" autocomplete="on">
+                                    <h1>Log in</h1>
+                                    <p>
+                                        <label for="username" class="uname" data-icon="u">
+                                            Ваш email или логин
+                                        </label>
+                                        <input
+                                                id="username"
+                                                name="username"
+                                                required="required"
+                                                type="text"
+                                                placeholder="myusername or mymail@mail.com"
+                                        />
+                                    </p>
+                                    <p>
+                                        <label for="password" class="youpasswd" data-icon="p">
+                                            Ваш пароль
+                                        </label>
+                                        <input
+                                                id="password"
+                                                name="password"
+                                                required="required"
+                                                type="password"
+                                                placeholder="password"
+                                        />
+                                    </p>
+                                    <p class="keeplogin">
+                                        <input
+                                                type="checkbox"
+                                                name="loginkeeping"
+                                                id="loginkeeping"
+                                                value="loginkeeping"
+                                        />
+                                        <label for="loginkeeping">Запомнить меня</label>
+                                    </p>
+
+                                    <p class="login button">
+
+                                        <input type="submit" value="Login" />
+                                    </p>
+                                    <p class="change_link">
+                                        Not a member yet ?
+                                        <a href="#toregister" class="to_register">Join us</a>
+                                    </p>
+                                </form>
+                            </div>
+
+                            <div id="register" class="animate form">
+                                <form class="register" method="post" action="mysuperscript.php" autocomplete="on">
+                                    <h1>Sign up</h1>
+                                    <p>
+                                        <label for="usernamesignup" class="uname" data-icon="u"
+                                        >Ваш логин</label
+                                        >
+                                        <input
+                                                id="usernamesignup"
+                                                name="username"
+                                                required="required"
+                                                type="text"
+                                                placeholder="mysuperusername690"
+                                        />
+                                    </p>
+                                    <p>
+                                        <label for="emailsignup" class="youmail" data-icon="e">
+                                            Ваш email</label
+                                        >
+                                        <input
+                                                id="emailsignup"
+                                                name="emailsignup"
+                                                required="required"
+                                                type="text"
+                                                placeholder="mysupermail@mail.com"
+                                        />
+                                    </p>
+                                    <p>
+                                        <label for="passwordsignup" class="youpasswd" data-icon="p"
+                                        >Ваш пароль
+                                        </label>
+                                        <input
+                                                id="passwordsignup"
+                                                name="password"
+                                                required="required"
+                                                type="password"
+                                                placeholder="password"
+                                        />
+                                    </p>
+                                    <p>
+                                        <label
+                                                for="passwordsignup_confirm"
+                                                class="youpasswd"
+                                                data-icon="p"
+                                        >Повторите Ваш пароль
+                                        </label>
+                                        <input
+                                                id="passwordsignup_confirm"
+                                                name="passwordsignup_confirm"
+                                                required="required"
+                                                type="password"
+                                                placeholder="password"
+                                        />
+                                    </p>
+                                    <p class="signin button">
+                                        <input type="submit" value="Sign up" />
+                                    </p>
+                                    <p class="change_link">
+                                        Already a member ?
+                                        <a href="#tologin" class="to_register"> Go and log in </a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="main" id="main_form">
+            <div class="contanier">
+                main information
+            </div>
+        </div>
+
+        <div class="about" id="about_form">
+            <div class="contanier">
+                <div class="about__text">
+                    <p>Над даною роботою працювали два стундента. Ми познайомилась з багатьма можливостями JavaScript</p>
+                </div>
+
+                <div class="about_develop">
+
+                    <div class="about__frontend">
+                        <div class="frontend__logo">
+                            <a href="#">
+                                <img src="../assets//frontend.png" width="" height="" alt="" />
+                            </a>
+                        </div>
+                        <div class="frontend__text">
+                            <p>Frontend проектував та створював Деркач Богдан</p>
+                        </div>
+                    </div>
+
+                    <div class="about__backend">
+                        <div class="backend__logo">
+                            <a href="#">
+                                <img src="../assets/backend.png" width="" height="" alt="" />
+                            </a>
+                        </div>
+                        <div class="backend__text">
+                            <p>Backend розробляв Прасол Юрій</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="footer__end">
+            <div class="container">
+                © Зроблено студентами ЧНТУ групи КІ-161
+            </div>
+        </div>
+    </footer>
 </div>
 
 
