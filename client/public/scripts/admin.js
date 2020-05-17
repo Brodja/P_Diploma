@@ -1,27 +1,58 @@
-main_btn.onclick = function(){
-    main_form.style.display = "block";
-    login_form.style.display = "none";
-    about_form.style.display = "none";
-    main_btn.style.borderBottomColor = '#ffc222';
-    login_btn.style.borderBottomColor = 'transparent';
-    about_btn.style.borderBottomColor = 'transparent';
-}
-login_btn.onclick = function(){
-    main_form.style.display = "none";
-    login_form.style.display = "block";
-    about_form.style.display = "none";
-    main_btn.style.borderBottomColor = 'transparent';
-    login_btn.style.borderBottomColor = '#ffc222';
-    about_btn.style.borderBottomColor = 'transparent';
-}
-about_btn.onclick = function(){
-    main_form.style.display = "none";
-    login_form.style.display = "none";
-    about_form.style.display = "block";
-    main_btn.style.borderBottomColor = 'transparent';
-    login_btn.style.borderBottomColor = 'transparent';
-    about_btn.style.borderBottomColor = '#ffc222';
-}
+next_1.onclick = function () {
+    document.getElementById("register_step_1").style.display = "none";
+    document.getElementById("register_step_2").style.display = "block";
+};
+next_2.onclick = function () {
+    document.getElementById("register_step_2").style.display = "none";
+    document.getElementById("register_step_3").style.display = "block";
+
+    document.getElementById("about_me").innerText = document.getElementById(
+        "about_me_edit"
+    ).value;
+    document.getElementById("about_school").innerText = document.getElementById(
+        "about_school_edit"
+    ).value;
+    document.getElementById("about_work").innerText = document.getElementById(
+        "about_work_edit"
+    ).value;
+    document.getElementById("about_hobby").innerText = document.getElementById(
+        "about_hobby_edit"
+    ).value;
+    document.getElementById(
+        "about_education"
+    ).innerText = document.getElementById("about_education_edit").value;
+    document.getElementById("about_like").innerText = document.getElementById(
+        "about_like_edit"
+    ).value;
+    document.getElementById("about_age").innerText = document.getElementById(
+        "about_age_edit"
+    ).value;
+};
+back_1.onclick = function () {
+    document.getElementById("register_step_1").style.display = "block";
+    document.getElementById("register_step_2").style.display = "none";
+};
+back_2.onclick = function () {
+    document.getElementById("register_step_2").style.display = "block";
+    document.getElementById("register_step_3").style.display = "none";
+};
+
+reg_btn.onclick = function () {
+    document.getElementById("reg").style.display = "block";
+    document.getElementById("login_form").style.display = "none";
+};
+log_btn.onclick = function () {
+    document.getElementById("reg").style.display = "none";
+    document.getElementById("login_form").style.display = "block";
+};
+log_btn_2.onclick = function () {
+    document.getElementById("reg").style.display = "none";
+    document.getElementById("login_form").style.display = "block";
+};
+log_btn_3.onclick = function () {
+    document.getElementById("reg").style.display = "none";
+    document.getElementById("login_form").style.display = "block";
+};
 
 
 function response(data) {

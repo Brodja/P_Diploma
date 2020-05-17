@@ -5,242 +5,385 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <meta charset="UTF-8">
     <script src='/socket.io/socket.io.js'></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/style3.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/animate-custom.css" />
-    <link rel="stylesheet" href="../assets/css/fonts.css" />
+
     <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 
 <body>
-<header class="header">
-    <div class="header__top">
-        <div class="contanier">
-            <div class="header_contacts">
-                <a class="header__phone" href="tel:380669786960">+380669786960</a>
-                <a class="header__email" href="#">body1906@gmail.com</a>
-                <a class="header__btn" href="#">Правила користування</a>
-            </div>
-        </div>
-    </div>
-    <div class="header__content">
-        <div class="contanier">
-            <div class="header__content-iner">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="../assets/logo.png" width="176" height="70" alt="" />
-                    </a>
-                </div>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#" id="main_btn">Головна</a></li>
-                        <li><a href="#" id="login_btn">Вхід</a></li>
-                        <li><a href="#" id="about_btn">Про нас</a></li>
-                        <li><a href="http://localhost:7777/chat#" id="chat_btn">Чат</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
 <div class="wrapper">
-    <div class="content">
-        <div class="warning">
-            <div class="contanier">
-                <div class="warning__content-iner">
-                    <div class="warning__logo">
-                        <a href="#">
-                            <img src="../assets/warninglogo.jpg" width="57" height="30" alt="" />
-                        </a>
+    <div class="reg" id="reg">
+        <div class="register__block__step__1" id="register_step_1">
+            <div class="log__reg__btns">
+                <div class="log__btn">
+                    <a href="#" class="reg_btn" id="log_btn">Вхід</a>
+                    <!-- <hr id="line_1" /> -->
+                </div>
+                <div class="reg__btn">
+                    <a href="#" class="reg_btn">Реєстрація</a>
+                    <hr id="line_2" />
+                </div>
+            </div>
+            <div class="steps__line">
+                <div class="elips">
+                    <span class="dot" id="step_1"></span>
+                </div>
+                <div class="grey__line">
+                    <hr id="grey_line" />
+                </div>
+                <div class="elips">
+                    <span class="dot" id="step_2"></span>
+                </div>
+                <div class="grey__line">
+                    <hr id="grey_line" />
+                </div>
+                <div class="elips">
+                    <span class="dot" id="step_3"></span>
+                </div>
+            </div>
+            <div class="steps__name">
+                <div class="step__number__1">
+                    <div class="step__name">
+                        Крок 1
                     </div>
-                    <div class="warning__text">
-                        <p>Доступ до чату мають лише авторизовані користувачі!!!</p>
+                    <div class="step__info">
+                        Логін та пароль
                     </div>
-                    <div class="warning__logo2">
-                        <a href="#">
-                            <img src="../assets/warninglogo.jpg" width="57" height="30" alt="" />
-                        </a>
+                </div>
+                <div class="step__number__2">
+                    <div class="step__name">
+                        Крок 2
                     </div>
+                    <div class="step__info">
+                        Особисті данні
+                    </div>
+                </div>
+                <div class="step__number__3">
+                    <div class="step__name">
+                        Крок 3
+                    </div>
+                    <div class="step__info">
+                        Перевірка
+                    </div>
+                </div>
+            </div>
+            <form class="register" method="post" autocomplete="on">
+            <div class="input__block">
+                <div class="input__element">
+                    <input name="username"
+                           required="required"
+                           type="text"
+                           placeholder="Логін" class="input__style" />
+                </div>
+                <div class="input__element">
+                    <input name="password"
+                           required="required"
+                           type="password"
+                           placeholder="Пароль" class="input__style" />
+                </div>
+                <div class="input__element">
+                    <input
+                            name="passwordsignup_confirm"
+                            required="required"
+                            type="password"
+                            placeholder="Підтвердження паролю"
+                            class="input__style"
+                    />
+                </div>
+            </div>
+            <div class="button__block">
+                <div class="button__next">
+                    <button class="button__next" id="next_1">
+                        <span class="button__next__name">Далі</span>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="admin__form" id="login_form">
-            <div class="container">
-                <section>
-                    <div id="container_demo">
-                        <a class="hiddenanchor" id="toregister"></a>
-                        <a class="hiddenanchor" id="tologin"></a>
-                        <div id="wrapper">
+        <div class="register__block__step__2" id="register_step_2">
+            <div class="log__reg__btns__2">
+                <div class="log__btn">
+                    <a href="#" class="reg_btn" id="log_btn_2">Вхід</a>
+                    <!-- <hr id="line_1" /> -->
+                </div>
+                <div class="reg__btn">
+                    <a href="#" class="reg_btn">Реєстрація</a>
+                    <hr id="line_2" />
+                </div>
+            </div>
 
-                            <div id="login" class="animate form">
-                                <form class="login" method="post" action="mysuperscript.php" autocomplete="on">
-                                    <h1>Log in</h1>
-                                    <p>
-                                        <label for="username" class="uname" data-icon="u">
-                                            Ваш email или логин
-                                        </label>
-                                        <input
-                                                id="username"
-                                                name="username"
-                                                required="required"
-                                                type="text"
-                                                placeholder="myusername or mymail@mail.com"
-                                        />
-                                    </p>
-                                    <p>
-                                        <label for="password" class="youpasswd" data-icon="p">
-                                            Ваш пароль
-                                        </label>
-                                        <input
-                                                id="password"
-                                                name="password"
-                                                required="required"
-                                                type="password"
-                                                placeholder="password"
-                                        />
-                                    </p>
-                                    <p class="keeplogin">
-                                        <input
-                                                type="checkbox"
-                                                name="loginkeeping"
-                                                id="loginkeeping"
-                                                value="loginkeeping"
-                                        />
-                                        <label for="loginkeeping">Запомнить меня</label>
-                                    </p>
+            <div class="steps__line__2">
+                <div class="elips">
+                    <span class="dot" id="step_1"></span>
+                </div>
+                <div class="grey__line">
+                    <hr id="grey_line_2" />
+                </div>
+                <div class="elips">
+                    <span class="dot" id="step_1"></span>
+                </div>
+                <div class="grey__line">
+                    <hr id="grey_line" />
+                </div>
+                <div class="elips">
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="steps__name__2">
+                <div class="step__number__1__2">
+                    <div class="step__name">
+                        Крок 1
+                    </div>
+                    <div class="step__info">
+                        Логін та пароль
+                    </div>
+                </div>
+                <div class="step__number__2__2">
+                    <div class="step__name">
+                        Крок 2
+                    </div>
+                    <div class="step__info">
+                        Особисті данні
+                    </div>
+                </div>
+                <div class="step__number__3__2">
+                    <div class="step__name">
+                        Крок 3
+                    </div>
+                    <div class="step__info">
+                        Перевірка
+                    </div>
+                </div>
+            </div>
 
-                                    <p class="login button">
+            <div class="contanier__info">
+                <div class="block__info__1">
+            <textarea
+                    name=""
+                    class="input__info"
+                    id="about_school_edit"
+                    placeholder="Школа"
+            ></textarea>
+                    <textarea
+                            name=""
+                            class="input__info"
+                            id="about_work_edit"
+                            placeholder="Робота"
+                    ></textarea>
+                    <textarea
+                            name=""
+                            class="input__info"
+                            id="about_education"
+                            placeholder="Університет"
+                    ></textarea>
+                </div>
+                <div class="block__info__1">
+            <textarea
+                    name=""
+                    class="input__info"
+                    id="about_hobby_edit"
+                    placeholder="Хобі"
+            ></textarea>
+                    <textarea
+                            name=""
+                            class="input__info"
+                            id="about_like_edit"
+                            placeholder="Вподобання"
+                    ></textarea>
+                    <textarea
+                            name=""
+                            class="input__info"
+                            id="about_age_edit"
+                            placeholder="Вік"
+                    ></textarea>
+                </div>
+                <div class="block__info__1">
+            <textarea
+                    name=""
+                    class="input__info__big"
+                    id="about_me_edit"
+                    placeholder="Про себе"
+            ></textarea>
+                </div>
+            </div>
 
-                                        <input type="submit" value="Login" />
-                                    </p>
-                                    <p class="change_link">
-                                        Not a member yet ?
-                                        <a href="#toregister" class="to_register">Join us</a>
-                                    </p>
-                                </form>
-                            </div>
+            <div class="button__block__2">
+                <div class="button__back__1">
+                    <button type="submit" class="button__back" id="back_1">
+                        <span class="button__back__name">Назад</span>
+                    </button>
+                </div>
+                <div class="button__foto__block">
+                    <button type="submit" class="button__foto">
+                        <span class="button__foto__name">Завантажити фото</span>
+                    </button>
+                </div>
+                <div class="button__next">
+                    <button type="submit" class="button__next" id="next_2">
+                        <span class="button__next__name">Далі</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </form>
+        <div class="register__block__step__3" id="register_step_3">
+            <div class="log__reg__btns__3">
+                <div class="log__btn">
+                    <a href="#" class="reg_btn" id="log_btn_3">Вхід</a>
+                    <!-- <hr id="line_1" /> -->
+                </div>
+                <div class="reg__btn">
+                    <a href="#" class="reg_btn">Реєстрація</a>
+                    <hr id="line_2" />
+                </div>
+            </div>
 
-                            <div id="register" class="animate form">
-                                <form class="register" method="post" action="mysuperscript.php" autocomplete="on">
-                                    <h1>Sign up</h1>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u"
-                                        >Ваш логин</label
-                                        >
-                                        <input
-                                                id="usernamesignup"
-                                                name="username"
-                                                required="required"
-                                                type="text"
-                                                placeholder="mysuperusername690"
-                                        />
-                                    </p>
-                                    <p>
-                                        <label for="emailsignup" class="youmail" data-icon="e">
-                                            Ваш email</label
-                                        >
-                                        <input
-                                                id="emailsignup"
-                                                name="emailsignup"
-                                                required="required"
-                                                type="text"
-                                                placeholder="mysupermail@mail.com"
-                                        />
-                                    </p>
-                                    <p>
-                                        <label for="passwordsignup" class="youpasswd" data-icon="p"
-                                        >Ваш пароль
-                                        </label>
-                                        <input
-                                                id="passwordsignup"
-                                                name="password"
-                                                required="required"
-                                                type="password"
-                                                placeholder="password"
-                                        />
-                                    </p>
-                                    <p>
-                                        <label
-                                                for="passwordsignup_confirm"
-                                                class="youpasswd"
-                                                data-icon="p"
-                                        >Повторите Ваш пароль
-                                        </label>
-                                        <input
-                                                id="passwordsignup_confirm"
-                                                name="passwordsignup_confirm"
-                                                required="required"
-                                                type="password"
-                                                placeholder="password"
-                                        />
-                                    </p>
-                                    <p class="signin button">
-                                        <input type="submit" value="Sign up" />
-                                    </p>
-                                    <p class="change_link">
-                                        Already a member ?
-                                        <a href="#tologin" class="to_register"> Go and log in </a>
-                                    </p>
-                                </form>
-                            </div>
+            <div class="steps__line__3">
+                <div class="elips__1">
+                    <span class="dot__1" id="step_1"></span>
+                </div>
+                <div class="grey__line__2">
+                    <hr id="grey_line_2" />
+                </div>
+                <div class="elips__1">
+                    <span class="dot__1" id="step_1"></span>
+                </div>
+                <div class="grey__line__2">
+                    <hr id="grey_line_2" />
+                </div>
+                <div class="elips__1">
+                    <span class="dot__1" id="step_1"></span>
+                </div>
+            </div>
+            <div class="steps__name__3">
+                <div class="step__number__1__3">
+                    <div class="step__name">
+                        Крок 1
+                    </div>
+                    <div class="step__info">
+                        Логін та пароль
+                    </div>
+                </div>
+                <div class="step__number__2__3">
+                    <div class="step__name">
+                        Крок 2
+                    </div>
+                    <div class="step__info">
+                        Особисті данні
+                    </div>
+                </div>
+                <div class="step__number__3__3">
+                    <div class="step__name">
+                        Крок 3
+                    </div>
+                    <div class="step__info">
+                        Перевірка
+                    </div>
+                </div>
+            </div>
+            <div class="about__info__block">
+                <div class="about__me">
+                    <div class="about__tittle">Про мене</div>
+                    <div class="about__text" id="about_me">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+                <div class="about__1">
+                    <div class="about__1__1">
+                        <div class="about__tittle">Школа</div>
+                        <div class="about__text" id="about_school">
+                            Вища школа  магії Хогвартс
                         </div>
                     </div>
-                </section>
+                    <div class="about__1__2">
+                        <div class="about__tittle">Робота</div>
+                        <div class="about__text" id="about_work">
+                            Збиваю охуйки
+                        </div>
+                    </div>
+                </div>
+                <div class="about__1">
+                    <div class="about__1__1">
+                        <div class="about__tittle">Університет</div>
+                        <div class="about__text" id="about_education">
+                            Політєх Шарага
+                        </div>
+                    </div>
+                    <div class="about__1__2">
+                        <div class="about__tittle">Вподобання</div>
+                        <div class="about__text" id="about_like">
+                            Збиваю охуйки
+                        </div>
+                    </div>
+                </div>
+                <div class="about__1">
+                    <div class="about__1__1">
+                        <div class="about__tittle">Вік</div>
+                        <div class="about__text" id="about_age">
+                            69
+                        </div>
+                    </div>
+                    <div class="about__1__2">
+                        <div class="about__tittle">Хобі</div>
+                        <div class="about__text" id="about_hobby">
+                            Працюю 24/7
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="main" id="main_form">
-            <div class="contanier">
-                main information
-            </div>
-        </div>
-
-        <div class="about" id="about_form">
-            <div class="contanier">
-                <div class="about__text">
-                    <p>Над даною роботою працювали два стундента. Ми познайомилась з багатьма можливостями JavaScript</p>
+            <div class="button__block__2">
+                <div class="button__back__2">
+                    <button type="submit" class="button__back" id="back_2">
+                        <span class="button__back__name">Назад</span>
+                    </button>
                 </div>
 
-                <div class="about_develop">
-
-                    <div class="about__frontend">
-                        <div class="frontend__logo">
-                            <a href="#">
-                                <img src="../assets//frontend.png" width="" height="" alt="" />
-                            </a>
-                        </div>
-                        <div class="frontend__text">
-                            <p>Frontend проектував та створював Деркач Богдан</p>
-                        </div>
-                    </div>
-
-                    <div class="about__backend">
-                        <div class="backend__logo">
-                            <a href="#">
-                                <img src="../assets/backend.png" width="" height="" alt="" />
-                            </a>
-                        </div>
-                        <div class="backend__text">
-                            <p>Backend розробляв Прасол Юрій</p>
-                        </div>
-                    </div>
-
+                <div class="button__finish">
+                    <button type="submit" class="button__next" id="finish">
+                        <span class="button__next__name">Завершити</span>
+                    </button>
                 </div>
-
             </div>
         </div>
-
     </div>
-    <footer class="footer">
-        <div class="footer__end">
-            <div class="container">
-                © Зроблено студентами ЧНТУ групи КІ-161
+
+    <div class="login__form" id="login_form">
+        <div class="log__reg__btns">
+            <div class="log__btn">
+                <a href="#" class="reg_btn" >Вхід</a>
+                <hr id="line_1" />
+            </div>
+            <div class="reg__btn">
+                <a href="#" class="reg_btn" id="reg_btn">Реєстрація</a>
+                <!-- <hr id="line_2" /> -->
             </div>
         </div>
-    </footer>
+        <form class="login" method="post" action="mysuperscript.php" autocomplete="on">
+        <div class="input__field">
+
+            <input id="username"
+                   name="username"
+                   required="required"
+                   type="text"
+
+                   class="input__style__login" placeholder="Логін" >
+
+            <input id="password"
+                   name="password"
+                   required="required"
+                   type="password"
+                   placeholder="password" class="input__style__login" >
+        </div>
+        <div class="login__button">
+            <button type="submit" class="button__login" id="login">
+                <span class="button__login__name">Вхід</span>
+            </button>
+        </div>
+        </form>
+    </div>
 </div>
 
 
