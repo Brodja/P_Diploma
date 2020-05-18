@@ -73,3 +73,70 @@ function EditUser(userId, userName, userAge) {
         }
     })
 }
+var currentEdit = 2;
+
+edit_1.onclick = function () {
+    if (currentEdit % 2 == 0) {
+        document.getElementById("edit__contanier").style.display = "none";
+        document.getElementById("edit__contanier__2").style.display = "block";
+        document.getElementById("about_age_edit").value = document.getElementById(
+            "about_age"
+        ).innerText;
+        document.getElementById("about_me_edit").value = document.getElementById(
+            "about_me"
+        ).innerText;
+        document.getElementById(
+            "about_school_edit"
+        ).value = document.getElementById("about_school").innerText;
+        document.getElementById("about_work_edit").value = document.getElementById(
+            "about_work"
+        ).innerText;
+        document.getElementById("about_hobby_edit").value = document.getElementById(
+            "about_hobby"
+        ).innerText;
+        document.getElementById(
+            "about_education_edit"
+        ).value = document.getElementById("about_education").innerText;
+        document.getElementById("about_like_edit").value = document.getElementById(
+            "about_like"
+        ).innerText;
+        document.getElementById("edit_1").innerText = "Зберегти";
+    } else {
+        document.getElementById("about_me").innerText = document.getElementById(
+            "about_me_edit"
+        ).value;
+        document.getElementById("about_school").innerText = document.getElementById(
+            "about_school_edit"
+        ).value;
+        document.getElementById("about_work").innerText = document.getElementById(
+            "about_work_edit"
+        ).value;
+        document.getElementById("about_hobby").innerText = document.getElementById(
+            "about_hobby_edit"
+        ).value;
+        document.getElementById(
+            "about_education"
+        ).innerText = document.getElementById("about_education_edit").value;
+        document.getElementById("about_like").innerText = document.getElementById(
+            "about_like_edit"
+        ).value;
+        document.getElementById("about_age").innerText = document.getElementById(
+            "about_age_edit"
+        ).value;
+        document.getElementById("edit__contanier__2").style.display = "none";
+        document.getElementById("edit__contanier").style.display = "block";
+        document.getElementById("edit_1").innerText = "Редагувати";
+    }
+    currentEdit++;
+};
+
+const btn = document.querySelector('.button__like');
+
+let like = true,
+    likeCount = document.querySelector('.button__like__2').innerHTML;
+
+btn.addEventListener('click', () => {
+    likeCount = like ? ++likeCount : --likeCount;
+    like = !like;
+    document.querySelector('.button__like__2').innerHTML = likeCount;
+});

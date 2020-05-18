@@ -12,6 +12,11 @@ body{
     background-color: #2e2e2e;
 
 }
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+input, a, button, textarea {outline:none;}
 .avatar {
     position: relative;
     width: 50%;
@@ -55,16 +60,14 @@ body{
     background: transparent;
     border: 1px solid #ffffff;
     margin-top: 2%;
-
     color: #ffffff;
-
     font-family: "Segoe UI";
-
     font-weight: 600;
     background: url(../images/arr.png);
     background-repeat: no-repeat;
-    background-position: 10% 50%;
+    background-position: 5% 50%;
     background-size: 50px;
+    cursor: pointer;
 }
 
 .head__2 {
@@ -77,20 +80,16 @@ body{
     border-radius: 38px;
     background: transparent;
     border: 1px solid #ffffff;
-
     margin: 18% 40px 60px;
     color: #ffffff;
-
     font-family: "Segoe UI";
     font-size: 40px;
     font-weight: 600;
-
     background: url(../images/like_img.png);
     background-repeat: no-repeat;
     background-position: 80% 40%;
     background-size: 50px;
-
-    /* transition: all .2s; */
+    cursor: pointer;
 }
 .button__like__2{
     padding-right: 60px;
@@ -104,7 +103,7 @@ body{
 }
 .content {
     box-sizing: border-box;
-    padding-top: 94px;
+    padding-top: 40px;
     padding-right: 82px;
     padding-left: 50px;
     border: white;
@@ -113,9 +112,10 @@ body{
     right: 0;
     width: 50%;
 }
+
 .box__1{
     /* box-sizing: border-box; */
-    height: 30px;
+    height: 50px;
 }
 .nickname2{
     /* Style for "BRODJA_228" */
@@ -170,7 +170,9 @@ body{
     border: 1px solid white;
     border-left: white;
     border-right: white;
-
+}
+.box__2__edit{
+    margin-top: 10px;
 }
 .about__me{
     height: 220px;
@@ -205,8 +207,9 @@ body{
 .about__6__blocks__2{
     height: 50px;
     /* margin-top: 60x; */
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 100px;
+    padding-bottom: 30px;
 }
 .about__info_age{
     width: 100px;
@@ -309,4 +312,54 @@ body{
     text-decoration: none;
     float: right;
     padding-top: 20px;
+}
+/* EDIT FORM */
+.content2 {
+    box-sizing: border-box;
+    padding-top: 94px;
+    padding-right: 82px;
+    padding-left: 50px;
+    border: white;
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    width: 50%;
+}
+#edit__contanier__2, #save{
+    display: none;
+}
+#about_me_edit{
+    width: 94.5%;
+    height: 100%;
+    /* border-radius: 30px; */
+    border: 1px solid #797979;
+    background-color: #1f1f1f;
+    overflow : auto;
+    resize: none;
+    padding: 10px ;
+    /* height: 120px; */
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 17px;
+    font-weight: 400;
+}
+#about_mee_edit,
+#about_school_edit,
+#about_work_edit,
+#about_hobby_edit,
+#about_education_edit,
+#about_like_edit{
+    width: 94.5%;
+    height: 45px;
+    /* border-radius: 30px; */
+    border: 1px solid #797979;
+    background-color: #1f1f1f;
+    overflow : auto;
+    resize: none;
+    padding: 10px ;
+    /* height: 120px; */
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    font-weight: 400;
 }

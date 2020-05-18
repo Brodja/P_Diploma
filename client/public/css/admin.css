@@ -465,7 +465,7 @@
     margin-top: 2%;
     width: 88.5%;
 }
-
+input, a, button, textarea {outline:none;}
 
 
 .button__login {
