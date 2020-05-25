@@ -132,7 +132,7 @@ textarea {
     /* height: 100%; */
 }
 .block__1 {
-    margin-top: 140px;
+    margin-top: 110px;
 }
 .b__1__left {
     width: 40%;
@@ -181,7 +181,7 @@ textarea {
     float: right;
 }
 .block__info__1 {
-    margin-top: 25px;
+    margin-top: 75px;
 }
 .about__title {
     /* Style for "Про мене" */
@@ -204,6 +204,7 @@ textarea {
 .one__info {
     width: 24%;
     float: left;
+    margin-top: 50px;
 }
 .block__info__2 {
     margin-top: 25px;
@@ -227,13 +228,13 @@ textarea {
     font-size: 25px;
     font-weight: 600;
 }
-
-.one__info {
-    width: 24%;
-    float: left;
-    margin-top: 50px;
+.block__info__3 {
+    margin-top: 55px;
+    margin-bottom: 30px;
 }
-
+.block__info__3 {
+    margin-left: 207px;
+}
 .tittle__foto {
     /* Style for "Фотографії" */
     width: 77px;
@@ -281,6 +282,7 @@ div.foto__5 a:not(:first-child) {
     border-radius: 38px;
     background: transparent;
     border: 1px solid #ffffff;
+
 }
 .button__write__text {
     /* Style for "Написати" */
@@ -316,184 +318,8 @@ div.foto__5 a:not(:first-child) {
     font-weight: 400;
 }
 
-/* .dfs,d;'d,sd';f */
+@media screen and (max-width: 1366px) {
 
-.box__2__edit {
-    margin-top: 10px;
-}
-.about__me {
-    height: 220px;
-}
-.about__me__title {
-    /* Style for "Про мене" */
-    width: 70px;
-    height: 21px;
-    color: #8b8a8a;
-    font-family: "Segoe UI";
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: 60px;
-}
-.about__me__text {
-    /* Style for "Lorem ipsu" */
-    width: 821px;
-    height: 120px;
-    color: #ffffff;
-    font-family: "Segoe UI";
-    font-size: 17px;
-    font-weight: 400;
-}
-
-.about__6__blocks {
-    margin-bottom: 20px;
-}
-.about__6__blocks__4 {
-    height: 100px;
-}
-.about__6__blocks__2 {
-    height: 50px;
-    /* margin-top: 60x; */
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-bottom: 30px;
-}
-.about__info_age {
-    width: 100px;
-    height: 110px;
-    float: left;
-}
-.about__info__title__age {
-    /* Style for "Вік" */
-    color: #8b8a8a;
-    font-family: "Segoe UI";
-    font-size: 15px;
-    font-weight: 600;
-}
-.about__info__text__age {
-    /* Style for "69" */
-    color: #ffffff;
-    font-family: "Segoe UI";
-    font-size: 25px;
-    font-weight: 600;
-}
-/* .about__info {
-  width: 178px;
-
-  float: left;
-  padding-left: 51px;
-} */
-.about__info__title {
-    /* Style for "Вік" */
-
-    color: #8b8a8a;
-    font-family: "Segoe UI";
-    font-size: 15px;
-    font-weight: 600;
-}
-.about__info__text {
-    /* Style for "Вища школа" */
-    color: #ffffff;
-    font-family: "Segoe UI";
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 23px;
-}
-
-#edit_1 {
-    /* Style for "Редагувати" */
-    width: 78px;
-    height: 21px;
-    color: #8b8a8a;
-    font-family: "Segoe UI";
-    font-size: 15px;
-    font-weight: 600;
-    float: right;
-    text-decoration: none;
-}
-
-.doble__buttons {
-    padding-top: 10px;
-    float: right;
-    margin-right: 30px;
-}
-.look__button a {
-    /* Style for "Переглянут" */
-    width: 190px;
-    height: 28px;
-    color: #ffffff;
-    font-family: "Segoe UI";
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-}
-.edit__button_2 a {
-    /* Style for "Редагувати" */
-    width: 78px;
-    height: 21px;
-    color: #8b8a8a;
-    font-family: "Segoe UI";
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    float: right;
-    padding-top: 20px;
-}
-/* EDIT FORM */
-.content2 {
-    box-sizing: border-box;
-    padding-top: 94px;
-    padding-right: 82px;
-    padding-left: 50px;
-    border: white;
-    position: absolute;
-    top: 1000px;
-    left: 0;
-    width: 50%;
-}
-#edit__contanier__2,
-#save {
-    display: none;
-}
-#about_me_edit {
-    width: 94.5%;
-    height: 100%;
-    /* border-radius: 30px; */
-    border: 1px solid #797979;
-    background-color: #1f1f1f;
-    overflow: auto;
-    resize: none;
-    padding: 10px;
-    /* height: 120px; */
-    color: #ffffff;
-    font-family: "Segoe UI";
-    font-size: 17px;
-    font-weight: 400;
-}
-.about__info{
-    width: 410px;
-    float: left;
-
-}
-
-.area__style {
-    width: 380px;
-    height: 70px;
-
-    border: 1px solid #797979;
-    background-color: #1f1f1f;
-    overflow: auto;
-    resize: none;
-
-
-    color: #ffffff;
-    font-family: "Segoe UI";
-    font-size: 16px;
-    font-weight: 300;
-}
-
-/* ddsfsdfsdfdfdsfsdfdsfdsfdsfsdfdsfsdjfbshdfbdshfbdshfbdshfdsbfhdsbfhdsbfhdsbfhdsbfhdsbhfdbsfhdsbfhdbshfbdshfbdshfbdshfb */
-
-@media screen and (device-width: 1366px) {
     .wrapper {
         position: absolute;
         left: 0;
@@ -592,12 +418,12 @@ div.foto__5 a:not(:first-child) {
         height: 100%;
     }
     .content {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         /* height: 100%; */
     }
     .block__1 {
-        margin-top: 50px;
+        margin-top: 80px;
     }
     .b__1__left {
         width: 40%;
@@ -614,15 +440,14 @@ div.foto__5 a:not(:first-child) {
         text-transform: uppercase;
     }
     .line {
-        width: 200px;
-
+        width: 220px;
         margin-left: 0;
         size: 1px;
     }
     .b_1_right {
         width: 236px;
         float: right;
-        margin-right: 20px;
+        margin: 15px;
     }
     .create__name {
         /* Style for "Акаунт ств" */
@@ -647,7 +472,7 @@ div.foto__5 a:not(:first-child) {
         float: right;
     }
     .block__info__1 {
-        margin-top: 25px;
+        margin-top: 35px;
     }
     .about__title {
         /* Style for "Про мене" */
@@ -660,20 +485,20 @@ div.foto__5 a:not(:first-child) {
     }
     .about__text {
         /* Style for "Lorem ipsu" */
-        width: 600px;
-        height: 140px;
+        width: 570px;
+        height: 120px;
         color: #ffffff;
         font-family: "Segoe UI";
         font-size: 17px;
         font-weight: 400;
-        text-align: justify;
+        text-align: justify ;
     }
-    /* .one__info {
-      width: 33%;
-      float: left;
-    } */
+    .one__info {
+        width: 33%;
+        float: left;
+    }
     .block__info__2 {
-        margin-top: 0px;
+        margin-top: 25px;
     }
     .little__info__text {
         /* Style for "Вища школа" */
@@ -694,27 +519,14 @@ div.foto__5 a:not(:first-child) {
         font-size: 25px;
         font-weight: 600;
     }
-
-    .one__info {
-        width: 170px;
-        float: left;
-        margin-top: 30px;
-        margin-left: 15px;
+    .block__info__3 {
+        position: absolute;
+        top: 388px;
+        left: 718px;
     }
-    /* div.block__info__2 div.one__info:nth-child(2) {
-      margin-left: 52px;
+    .block__info__3 {
+        margin-left: 207px;
     }
-    div.block__info__2 div.one__info:nth-child(5) {
-      margin-left: 52px;
-    }
-    div.block__info__2 div.one__info:nth-child(3) {
-      margin-left: 52px;
-    }
-    div.block__info__2 div.one__info:nth-child(6) {
-      margin-left: 52px;
-    } */
-
-
     .tittle__foto {
         /* Style for "Фотографії" */
         width: 77px;
@@ -729,22 +541,20 @@ div.foto__5 a:not(:first-child) {
         /* Style for "Image 2" */
         width: 142px;
         height: 142px;
-        margin-top: 15px;
     }
     div.foto__5 a:not(:first-child) {
-        margin-left: 80px;
+        margin-left: 67px;
     }
-
-    div.foto__5 a:nth-child(4) {
+    div.foto__5 a:nth-child(4){
         margin-left: 108.5px;
     }
-    div.foto__5 a:nth-child(5) {
+    div.foto__5 a:nth-child(5){
         margin-left: 67.5px;
     }
     .btn__look__foto {
         /* Style for "Переглянут" */
         width: 190px;
-        height: 28px;
+        height: 10px;
         color: #ffffff;
         font-family: "Segoe UI";
         font-size: 20px;
@@ -770,6 +580,7 @@ div.foto__5 a:not(:first-child) {
         border-radius: 38px;
         background: transparent;
         border: 1px solid #ffffff;
+
     }
     .button__write__text {
         /* Style for "Написати" */
@@ -803,152 +614,5 @@ div.foto__5 a:not(:first-child) {
         font-family: "Segoe UI";
         font-size: 20px;
         font-weight: 400;
-    }
-
-    /* .dfs,d;'d,sd';f */
-
-    .box__2__edit {
-        margin-top: 10px;
-    }
-    .about__me {
-        height: 190px;
-    }
-    .about__me__title {
-        /* Style for "Про мене" */
-        width: 70px;
-        height: 21px;
-        color: #8b8a8a;
-        font-family: "Segoe UI";
-        font-size: 15px;
-        font-weight: 600;
-        margin-top: 60px;
-    }
-    .about__me__text {
-        /* Style for "Lorem ipsu" */
-        width: 821px;
-        height: 120px;
-        color: #ffffff;
-        font-family: "Segoe UI";
-        font-size: 17px;
-        font-weight: 400;
-    }
-
-    .about__6__blocks {
-        width: 615px;
-
-    }
-
-    .about__info{
-        width: 205px;
-        float: left;
-
-    }
-
-    .area__style {
-        width: 180px;
-        height: 70px;
-
-        border: 1px solid #797979;
-        background-color: #1f1f1f;
-        overflow: auto;
-        resize: none;
-
-
-        color: #ffffff;
-        font-family: "Segoe UI";
-        font-size: 16px;
-        font-weight: 300;
-    }
-    .about__info__title {
-        /* Style for "Вік" */
-
-        color: #8b8a8a;
-        font-family: "Segoe UI";
-        font-size: 15px;
-        font-weight: 600;
-    }
-    .about__info__text {
-        /* Style for "Вища школа" */
-        color: #ffffff;
-        font-family: "Segoe UI";
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 23px;
-    }
-
-    #edit_1 {
-        /* Style for "Редагувати" */
-        width: 78px;
-        height: 21px;
-        color: #8b8a8a;
-        font-family: "Segoe UI";
-        font-size: 15px;
-        font-weight: 600;
-        float: right;
-        text-decoration: none;
-        margin-right: 20px;
-    }
-
-    .doble__buttons {
-        padding-top: 10px;
-        float: right;
-        margin-right: 30px;
-    }
-    .look__button a {
-        /* Style for "Переглянут" */
-        width: 190px;
-        height: 28px;
-        color: #ffffff;
-        font-family: "Segoe UI";
-        font-size: 20px;
-        font-weight: 400;
-        text-decoration: none;
-    }
-    .edit__button_2 a {
-        /* Style for "Редагувати" */
-        width: 78px;
-        height: 21px;
-        color: #8b8a8a;
-        font-family: "Segoe UI";
-        font-size: 15px;
-        font-weight: 600;
-        text-decoration: none;
-        float: right;
-        padding-top: 20px;
-    }
-    /* EDIT FORM */
-    .content2 {
-        box-sizing: border-box;
-        padding-top: 94px;
-        padding-right: 82px;
-        padding-left: 50px;
-        border: white;
-        position: absolute;
-        top: 1000px;
-        left: 0;
-        width: 50%;
-    }
-    #edit__contanier__2,
-    #save {
-        display: none;
-    }
-    #about_me_edit {
-        width: 590px;
-        height: 100%;
-        /* border-radius: 30px; */
-        border: 1px solid #797979;
-        background-color: #1f1f1f;
-        overflow: auto;
-        resize: none;
-        padding: 10px;
-        /* height: 120px; */
-        color: #ffffff;
-        font-family: "Segoe UI";
-        font-size: 17px;
-        font-weight: 400;
-    }
-
-    .box__3{
-        margin-top: 20px;
     }
 }

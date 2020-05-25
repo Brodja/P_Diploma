@@ -15,207 +15,231 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="avatar">
+    <div class="left">
         <img src="../assets/avatar.jpg" alt="" />
-<!-- Visual Studio -->
-<!-- <img src="../public/avatar.jpg" alt="" /> -->
-        <div class="head__block">
-            <div class="head__1">
-                <div class="head__1__1">
-                    <div class="nickname__block" id="text">
+
+        <div class="left__head">
+            <div class="left__head__content">
+                <div class="left__1__block">
+                    <div class="nickname">
                         BRODJA_228
                     </div>
+
                     <div class="button__back__block">
-                        <button class="button__back" id="text" onClick='location.href="http://localhost:7777/chat"'>
+                        <button
+                                class="button__back"
+                                id="text"
+                                onClick='location.href="http://localhost:7777/chat"'
+                        >
                             Повернутися у чат
                         </button>
                     </div>
                 </div>
-            </div>
-            <div class="head__2">
-                <button class="button__like"> <span class="button__like__2">2</span> </button>
+                <div class="left__2__block">
+                    <button class="button__like">
+                        <span class="button__like__2">2</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="content__box">
-        <img src="../img/background.png" alt="" />
+
+    <div class="right">
         <div class="content">
-            <div class="box__1">
-                <div class="nickname2">
-                    BRODJA_228
+            <div class="block__1 clearfix">
+                <div class="b__1__left">
+                    <div class="nickname__2">
+                        BRODJA_228
+                    </div>
+                    <hr class="line" />
                 </div>
-                <div class="account__created">
-                    <div class="account__created__text">
+                <div class="b_1_right">
+                    <div class="create__name">
                         Акаунт створено :
                     </div>
-                    <div class="account__created__date">
+                    <div class="create__date">
                         11.05.2020
                     </div>
                 </div>
             </div>
-            <!-- <hr width="280px" color="white"> -->
+
             <div class="box__2">
-                <div class="button__edit__1">
+                <div class="button__edit__1 clearfix">
                     <a href="#" id="edit_1">Редагувати</a>
                 </div>
                 <!-- <div class="button__edit__1">
-                  <a href="#" id="save">Зберегти</a>
-                </div> -->
+                    <a href="#" id="save">Зберегти</a>
+                  </div> -->
                 <div id="edit__contanier__2">
                     <form action="" name="field">
                         <div class="box__2__edit">
-
                             <div class="about__me">
                                 <div class="about__me__title">
                                     Про мене
                                 </div>
-                                <div class="about__me__text" >
-                                    <textarea  name="" id="about_me_edit" maxlength="700">   Lorem ipsum dolor sit amet, c</textarea>
-
+                                <div class="about__me__text">
+                      <textarea name="" id="about_me_edit" maxlength="700">
+   Lorem ipsum dolor sit amet, c</textarea
+                      >
                                 </div>
                             </div>
-                            <div class="about__6__blocks">
-                                <div class="about__6__blocks__4">
 
-                                    <div class="about__info_age">
-                                        <div class="about__info__title__age">
-                                            Вік
-                                        </div>
-                                        <div class="about__info__text__age"  class="about__info__text">
-
-                                            <textarea name="" id="about_age_edit">69</textarea>
-                                        </div>
+                            <div class="about__6__blocks clearfix">
+                                <div class="about__info">
+                                    <div class="about__info__title">
+                                        Вік
                                     </div>
-
-                                    <div class="about__info">
-                                        <div class="about__info__title">
-                                            Школа
-                                        </div>
-                                        <div class="about__info__text">
-                                            <textarea name="" id="about_school_edit">Вища школа  магії Хогвартс</textarea>
-
-                                        </div>
+                                    <div class="about__info__text">
+                        <textarea
+                                name=""
+                                class="area__style"
+                                id="about_age_edit"
+                        >69</textarea
+                        >
                                     </div>
-
-                                    <div class="about__info">
-                                        <div class="about__info__title">
-                                            Робота
-                                        </div>
-                                        <div class="about__info__text">
-                                            <textarea name="" id="about_work_edit" >Збиваю охуйки</textarea>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="about__info">
-                                        <div class="about__info__title">
-                                            Хобі
-                                        </div>
-                                        <div class="about__info__text">
-                                            <textarea name=""  id="about_hobby_edit" >Працюю 24/7</textarea>
-
-                                        </div>
-                                    </div>
-
                                 </div>
 
-                                <div class="about__6__blocks__2">
-                                    <div class="about__info">
-                                        <div class="about__info__title">
-                                            Університет
-                                        </div>
-                                        <div class="about__info__text">
-                                            <textarea name=""  id="about_education_edit"> Політєх Шарага</textarea>
-
-                                        </div>
+                                <div class="about__info">
+                                    <div class="about__info__title">
+                                        Школа
                                     </div>
-
-                                    <div class="about__info">
-                                        <div class="about__info__title">
-                                            Вподобання
-                                        </div>
-                                        <div class="about__info__text">
-                                            <textarea name="" id="about_like_edit">Збиваю охуйки</textarea>
-
-                                        </div>
+                                    <div class="about__info__text">
+                        <textarea
+                                name=""
+                                class="area__style"
+                                id="about_school_edit"
+                        >
+Вища школа  магії Хогвартс</textarea
+                        >
                                     </div>
+                                </div>
 
+                                <div class="about__info">
+                                    <div class="about__info__title">
+                                        Робота
+                                    </div>
+                                    <div class="about__info__text">
+                        <textarea
+                                name=""
+                                class="area__style"
+                                id="about_work_edit"
+                        >
+Збиваю охуйки</textarea
+                        >
+                                    </div>
+                                </div>
+
+                                <div class="about__info">
+                                    <div class="about__info__title">
+                                        Хобі
+                                    </div>
+                                    <div class="about__info__text">
+                        <textarea
+                                name=""
+                                class="area__style"
+                                id="about_hobby_edit"
+                        >
+Працюю 24/7</textarea
+                        >
+                                    </div>
+                                </div>
+
+                                <div class="about__info">
+                                    <div class="about__info__title">
+                                        Університет
+                                    </div>
+                                    <div class="about__info__text">
+                        <textarea
+                                name=""
+                                class="area__style"
+                                id="about_education_edit"
+                        >
+ Політєх Шарага</textarea
+                        >
+                                    </div>
+                                </div>
+
+                                <div class="about__info">
+                                    <div class="about__info__title">
+                                        Вподобання
+                                    </div>
+                                    <div class="about__info__text">
+                        <textarea
+                                name=""
+                                class="area__style"
+                                id="about_like_edit"
+                        >
+Збиваю охуйки</textarea
+                        >
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </form>
                 </div>
                 <div id="edit__contanier">
-                    <div class="about__me">
-                        <div class="about__me__title">
+                    <div class="block__info__1 clearfix">
+                        <div class="about__title">
                             Про мене
                         </div>
-                        <div class="about__me__text" id="about_me">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <div class="about__text" id="about_me">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
                         </div>
                     </div>
-                    <div class="about__6__blocks">
-                        <div class="about__6__blocks__4">
-
-                            <div class="about__info_age">
-                                <div class="about__info__title__age">
-                                    Вік
-                                </div>
-                                <div class="about__info__text__age" id="about_age">
-                                    69
-                                </div>
+                    <div class="block__info__2 clearfix">
+                        <div class="one__info">
+                            <div class="about__title">
+                                Вік
                             </div>
-
-                            <div class="about__info">
-                                <div class="about__info__title">
-                                    Школа
-                                </div>
-                                <div class="about__info__text" id="about_school">
-                                    Вища школа  магії Хогвартс
-                                </div>
+                            <div class="little__info__text__age" id="about_age">
+                                69
                             </div>
-
-                            <div class="about__info">
-                                <div class="about__info__title">
-                                    Робота
-                                </div>
-                                <div class="about__info__text" id="about_work">
-                                    Збиваю охуйки
-                                </div>
-                            </div>
-
-                            <div class="about__info">
-                                <div class="about__info__title">
-                                    Хобі
-                                </div>
-                                <div class="about__info__text" id="about_hobby">
-                                    Працюю 24/7
-                                </div>
-                            </div>
-
                         </div>
-
-                        <div class="about__6__blocks__2">
-                            <div class="about__info">
-                                <div class="about__info__title">
-                                    Університет
-                                </div>
-                                <div class="about__info__text" id="about_education">
-                                    Політєх Шарага
-                                </div>
+                        <div class="one__info">
+                            <div class="about__title">
+                                Школа
                             </div>
-
-                            <div class="about__info">
-                                <div class="about__info__title">
-                                    Вподобання
-                                </div>
-                                <div class="about__info__text" id="about_like">
-                                    Збиваю охуйки
-                                </div>
+                            <div class="little__info__text" id="about_school">
+                                Вища школа магії Хогвартс
+                            </div>
+                        </div>
+                        <div class="one__info">
+                            <div class="about__title">
+                                Робота
+                            </div>
+                            <div class="little__info__text" id="about_work">
+                                Збиваю охуйки
+                            </div>
+                        </div>
+                        <div class="one__info">
+                            <div class="about__title">
+                                Хобі
+                            </div>
+                            <div class="little__info__text" id="about_hobby">
+                                Працюю 24/7
+                            </div>
+                        </div>
+                        <div class="one__info">
+                            <div class="about__title">
+                                Університет
+                            </div>
+                            <div class="little__info__text" id="about_education">
+                                Політєх Шарага
+                            </div>
+                        </div>
+                        <div class="one__info">
+                            <div class="about__title">
+                                Вподобання
+                            </div>
+                            <div class="little__info__text" id="about_like">
+                                Збиваю охуйки
                             </div>
                         </div>
                     </div>
@@ -223,24 +247,19 @@
             </div>
             <!-- <hr width="280px" color="white" > -->
             <div class="box__3">
-                <div class="menu__foto">
-                    <div class="foto__title">
+                <hr class="line" />
+                <div class="foto__block clearfix">
+                    <div class="tittle__foto">
                         Фотографії
                     </div>
-                    <div class="about__5__foto">
-                        <a href="../assets/foto.jpg"   data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""></a>
-                        <a href="../assets/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""></a>
-                        <a href="../assets/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""></a>
-                        <a href="../assets/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""></a>
-                        <a href="../assets/foto.jpg"   data-lightbox="roadtrip"><img class="one__foto__last" src="../assets/foto.jpg" alt=""> </a>
-
-                        <!-- <a href="../public/images/foto.jpg"   data-lightbox="roadtrip"><img class="one__foto" src="../public/images/foto.jpg" alt=""></a>
-                        <a href="../public/images/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../public/images/foto.jpg" alt=""></a>
-                        <a href="../public/images/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../public/images/foto.jpg" alt=""></a>
-                        <a href="../public/images/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../public/images/foto.jpg" alt=""></a>
-                        <a href="../public/images/foto.jpg"   data-lightbox="roadtrip"><img class="one__foto__last" src="../public/images/foto.jpg" alt=""> </a> -->
-
-            
+                    <div class="foto__5">
+                        <div class="menu__foto">
+                            <a href="../assets/foto.jpg"   data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""></a>
+                            <a href="../assets/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""></a>
+                            <a href="../assets/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""></a>
+                            <a href="../assets/foto.jpg"  data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""></a>
+                            <a href="../assets/foto.jpg"   data-lightbox="roadtrip"><img class="one__foto" src="../assets/foto.jpg" alt=""> </a>
+                        </div>
                     </div>
                 </div>
                 <div class="doble__buttons">
@@ -251,10 +270,8 @@
                         <a href="#">Редагувати</a>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
 </div>
 

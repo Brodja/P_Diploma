@@ -82,9 +82,9 @@ edit_1.onclick = function () {
         document.getElementById("about_age_edit").value = document.getElementById(
             "about_age"
         ).innerText;
-        document.getElementById("about_me_edit").value = document.getElementById(
-            "about_me"
-        ).innerText;
+        // document.getElementById("about_me_edit").value = document.getElementById(
+        //     "about_me"
+        // ).innerText;
         document.getElementById(
             "about_school_edit"
         ).value = document.getElementById("about_school").innerText;
