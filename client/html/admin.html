@@ -67,36 +67,52 @@
                 </div>
             </div>
             <form class="register" method="post" autocomplete="on">
-            <div class="input__block">
-                <div class="input__element">
-                    <input name="username"
-                           required="required"
-                           type="text"
-                           placeholder="Логін" class="input__style" />
+                <div class="input__block">
+                    <div class="input__element">
+                        <div class="green__div" id="green_div_1"></div>
+                        <input
+                                type="text"
+                                placeholder="Логін"
+                                class="input__style"
+                                onkeyup="check_2()"
+                                id="register_login_field"
+                        />
+                    </div>
+                    <span class="input__err" id="err_login_1">Введіть логін</span>
+                    <span class="input__err" id="err_login_2">Мінімальна довжина логіну 5 символів</span>
+                    <span class="input__msg" id="err_login_3">Логін доступний</span>
+                    <div class="input__element">
+                        <div class="green__div" id="green_div_2"></div>
+                        <input
+                                type="password"
+                                placeholder="Пароль"
+                                class="input__style"
+                                onkeyup="check_2()"
+                                id="register_pass_field"
+                        />
+                    </div>
+                    <span class="input__err" id="err_pass1_1">Введіть пароль</span>
+                    <span class="input__err" id="err_pass1_2">Мінімальна довжина паролю 4 символів</span>
+                    <div class="input__element">
+                        <div class="green__div" id="green_div_3"></div>
+                        <input
+                                type="password"
+                                placeholder="Підтвердження паролю"
+                                class="input__style"
+                                onkeyup="check_2()"
+                                id="register_pass2_field"
+                        />
+                    </div>
+                    <span class="input__err" id="err_pass2_1">Паролі не співпадають</span>
+                    <span class="input__msg" id="err_pass2_2">Паролі співпадають</span>
                 </div>
-                <div class="input__element">
-                    <input name="password"
-                           required="required"
-                           type="password"
-                           placeholder="Пароль" class="input__style" />
+                <div class="button__block">
+                    <div class="button__next">
+                        <button type="submit" class="button__next" id="next_1">
+                            <span class="button__next__name">Далі</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="input__element">
-                    <input
-                            name="passwordsignup_confirm"
-                            required="required"
-                            type="password"
-                            placeholder="Підтвердження паролю"
-                            class="input__style"
-                    />
-                </div>
-            </div>
-            <div class="button__block">
-                <div class="button__next">
-                    <button class="button__next" id="next_1">
-                        <span class="button__next__name">Далі</span>
-                    </button>
-                </div>
-            </div>
         </div>
 
         <div class="register__block__step__2" id="register_step_2">
@@ -157,64 +173,74 @@
 
             <div class="contanier__info">
                 <div class="block__info__1">
-            <textarea
-                    name=""
-                    class="input__info"
-                    id="about_school_edit"
-                    placeholder="Школа"
-            ></textarea>
+              <textarea
+                      name=""
+                      class="input__info"
+                      id="about_school_edit"
+                      placeholder="Школа"
+                      maxlength="40"
+              ></textarea>
                     <textarea
                             name=""
                             class="input__info"
                             id="about_work_edit"
                             placeholder="Робота"
+                            maxlength="40"
                     ></textarea>
                     <textarea
                             name=""
                             class="input__info"
-                            id="about_education"
+                            id="about_education_edit"
                             placeholder="Університет"
+                            maxlength="40"
                     ></textarea>
                 </div>
                 <div class="block__info__1">
-            <textarea
-                    name=""
-                    class="input__info"
-                    id="about_hobby_edit"
-                    placeholder="Хобі"
-            ></textarea>
+              <textarea
+                      name=""
+                      class="input__info"
+                      id="about_hobby_edit"
+                      placeholder="Хобі"
+                      maxlength="40"
+              ></textarea>
                     <textarea
                             name=""
                             class="input__info"
                             id="about_like_edit"
                             placeholder="Вподобання"
+                            maxlength="40"
                     ></textarea>
                     <textarea
                             name=""
                             class="input__info"
                             id="about_age_edit"
                             placeholder="Вік"
+                            maxlength="3"
                     ></textarea>
                 </div>
                 <div class="block__info__1">
-            <textarea
-                    name=""
-                    class="input__info__big"
-                    id="about_me_edit"
-                    placeholder="Про себе"
-            ></textarea>
+              <textarea
+                      name=""
+                      class="input__info__big"
+                      id="about_me_edit"
+                      placeholder="Про себе"
+                      maxlength="240"
+              ></textarea>
                 </div>
             </div>
 
-            <div class="button__block__2" id="button__block__2__2">
+            <div class="button__block__2 " id="button__block__2__2">
                 <div class="button__back__1">
                     <button type="submit" class="button__back" id="back_1">
                         <span class="button__back__name">Назад</span>
                     </button>
                 </div>
                 <div class="button__foto__block">
+
                     <button type="submit" class="button__foto">
-                        <span class="button__foto__name">Завантажити фото</span>
+                        <input name="fileAttach" type="file" id="foto" />
+                        <label for="foto" id="lable_foto">Выберите файл</label>
+
                     </button>
                 </div>
                 <div class="button__next">
@@ -224,7 +250,6 @@
                 </div>
             </div>
         </div>
-        </form>
         <div class="register__block__step__3" id="register_step_3">
             <div class="log__reg__btns__3">
                 <div class="log__btn">
@@ -236,7 +261,7 @@
                     <hr id="line_2" />
                 </div>
             </div>
-
+            </form>
             <div class="steps__line__3">
                 <div class="elips__1">
                     <span class="dot__1" id="step_1"></span>
@@ -284,17 +309,20 @@
                 <div class="about__me">
                     <div class="about__tittle">Про мене</div>
                     <div class="about__text" id="about_me">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </div>
                 </div>
                 <div class="about__1">
                     <div class="about__1__1">
                         <div class="about__tittle">Школа</div>
                         <div class="about__text" id="about_school">
-                            Вища школа  магії Хогвартс
+                            Вища школа магії Хогвартс
                         </div>
                     </div>
                     <div class="about__1__2">
@@ -304,6 +332,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="about__1">
                     <div class="about__1__1">
                         <div class="about__tittle">Університет</div>
@@ -311,6 +340,7 @@
                             Політєх Шарага
                         </div>
                     </div>
+
                     <div class="about__1__2">
                         <div class="about__tittle">Вподобання</div>
                         <div class="about__text" id="about_like">
@@ -318,6 +348,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="about__1">
                     <div class="about__1__1">
                         <div class="about__tittle">Вік</div>
@@ -349,11 +380,10 @@
             </div>
         </div>
     </div>
-
     <div class="login__form" id="login_form">
         <div class="log__reg__btns">
             <div class="log__btn">
-                <a href="#" class="reg_btn" >Вхід</a>
+                <a href="#" class="reg_btn">Вхід</a>
                 <hr id="line_1" />
             </div>
             <div class="reg__btn">
@@ -362,30 +392,37 @@
             </div>
         </div>
         <form class="login" method="post" action="mysuperscript.php" autocomplete="on">
-        <div class="input__field">
+            <div class="input__field">
+                <input
+                        type="text"
+                        class="input__style__login"
+                        placeholder="Логін"
+                        name="username"
+                        required="required"
+                        id="login_login_field"
+                        onkeyup="check_1()"
+                /> <br>
+                <span class="input__err" id="err_login2_1">Введіть логін</span>
+                <input
+                        name="password"
+                        required="required"
+                        type="password"
+                        class="input__style__login"
+                        placeholder="Пароль"
+                        id="login_pass_field"
+                        onkeyup="check_1()"
+                /> <br>
+                <span class="input__err" id="err_login2_2">Введіть пароль</span>
+            </div>
 
-            <input id="username"
-                   name="username"
-                   required="required"
-                   type="text"
-
-                   class="input__style__login" placeholder="Логін" >
-
-            <input id="password"
-                   name="password"
-                   required="required"
-                   type="password"
-                   placeholder="password" class="input__style__login" >
-        </div>
-        <div class="login__button">
-            <button type="submit" class="button__login" id="login">
-                <span class="button__login__name">Вхід</span>
-            </button>
-        </div>
+            <div class="login__button">
+                <button type="submit" class="button__login" id="login">
+                    <span class="button__login__name">Вхід</span>
+                </button>
+            </div>
         </form>
     </div>
 </div>
-
 
 
 

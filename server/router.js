@@ -36,6 +36,9 @@ module.exports = app => {
     app.get('/other_profile', checkAuth, (req,res) => {
         res.render('other_profile.html', { username: req.user.username});
     });
+    app.get('/new_other_profile', checkAuth, (req,res) => {
+        res.render('new_other_profile.html', { username: req.user.username});
+    });
     app.get('/profile', checkAuth, (req,res) => {
         res.render('profile.html', {
             about1: req.user.about1,about2: req.user.about2,about3: req.user.about3, username: req.user.username
